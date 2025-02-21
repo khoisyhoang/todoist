@@ -1,0 +1,181 @@
+* {
+    box-sizing: border-box;
+}
+
+.todo-app {
+    border: 1px solid #ddd;
+    width: 500px;
+    margin: 50px auto;
+    border-radius: 8px;
+    background: #f6f6f6;
+    font-family: "Roboto";
+    padding: 30px;
+}
+
+.todo-app__title {
+    font-size: 32px;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 20px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 20px;
+    color: orange;
+}
+
+.todo-app__create {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.todo-app__create input {
+    flex: 1;
+    height: 42px;
+    padding: 0 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px 0 0 8px;
+    outline: 0;
+}
+
+.todo-app__create button {
+    font-size: 20px;
+    border: 0;
+    background: orange;
+    width: 42px;
+    height: 42px;
+    border-radius: 0 8px 8px 0;
+    color: #fff;
+    cursor: pointer;
+}
+
+.todo-app__item {
+    background: #fff;
+    padding: 15px;
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+.todo-app__item-content {
+    flex: 1;
+    text-wrap: wrap;
+    font-weight: 600;
+}
+
+.todo-app__item--completed .todo-app__item-content {
+    text-decoration: line-through;
+    color: gray;
+    font-weight: 300;
+}
+
+.todo-app__item-button {
+    width: 32px;
+    height: 32px;
+    border: 0;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.todo-app__item-button--edit {
+    background: #ffc400;
+}
+
+.todo-app__item-button--complete {
+    background: #60c700;
+}
+
+.todo-app__item-button--delete {
+    background: #c70000;
+    color: #fff;
+}
+
+.todo-app__item-button--undo {
+    background-color: #ddd;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+.modal.show {
+    display: flex;
+}
+
+.modal .inner-main {
+    background-color: #fff;
+    position: relative;
+    z-index: 1;
+    width: 400px;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.modal .inner-overlay {
+    background-color: #00000086;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.modal .inner-close {
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    width: 30px;
+    height: 30px;
+    border: 0;
+    border-radius: 50%;
+    background-color: red;
+    font-weight: 700;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.modal .inner-main form input,
+.modal .inner-main form select {
+    width: 100%;
+    height: 48px;
+    margin-bottom: 15px;
+    border: 1px solid #b6b6b6;
+    border-radius: 6px;
+    padding: 0 15px;
+    outline: none;
+}
+
+.modal .inner-main form button {
+    width: 100%;
+    height: 48px;
+    border-radius: 6px;
+    border: 0;
+    background-color: #ffc400;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.todo-app__pagination {
+    margin-top: 20px;
+}
+
+.todo-app__pagination select {
+    height: 30px;
+    width: 100px;
+    border: 1px solid #b6b6b6;
+    border-radius: 6px;
+    outline: none;
+}
+.todo-app__item-button--undo {
+    background-color: gray;
+}
