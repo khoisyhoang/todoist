@@ -13,7 +13,6 @@ import {
 } from "https://www.gstatic.com/firebasejs/11.3.0/firebase-database.js";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyC-xVKifDogT-ZPdBJZFsXognklDYEEF3U",
   authDomain: "todoist-a6da6.firebaseapp.com",
   databaseURL: "https://todoist-a6da6-default-rtdb.firebaseio.com",
   projectId: "todoist-a6da6",
